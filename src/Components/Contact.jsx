@@ -11,9 +11,8 @@ const Section = styled.div`
  scroll-snap-align:center;  `
 
  const Container = styled.div`
-
-   height: 100vh;
-  scroll-snap-align: center;
+  //  height: 100vh;
+  // scroll-snap-align: center;
   width: 100%;
   display:flex;
   justify-content:space-between;
@@ -23,9 +22,8 @@ const Section = styled.div`
  const Left = styled.div`
  flex:1;
 display: flex;
-justify-content:flex-end;
+justify-content: flex-end;
 align-items: center;
-background-color: #87ceeb;
 
   `
 
@@ -49,9 +47,10 @@ gap: 25px;`
 
  const Input = styled.input`
  padding: 20px;
- background-color: white;
+ background-color: #F0FFFF ;
  border: none;
  border-radius: 5px;
+ 
  `
 
  const Button = styled.button`
@@ -69,6 +68,7 @@ gap: 25px;`
   border-radius: 5px;
   border:  none;
   padding: 10px;
+   background-color: #F0FFFF ;
 
  `
 
@@ -94,19 +94,6 @@ const Contact = () => {
       },
     );
 };
-
-
-  
- 
-
-
-
-
-
-
-
-
-
   return (
   <Section>
      <Container>
@@ -118,7 +105,6 @@ const Contact = () => {
           <TextArea placeholder='digite um texto' name='message'/>
          <Button type='submit'>Send</Button>
          {success && " msg enviada"}
-
         </Form>
       </Left>
       <Right>
